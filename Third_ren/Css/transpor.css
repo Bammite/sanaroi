@@ -1,0 +1,203 @@
+
+body{
+    background: linear-gradient(0deg,rgb(116, 173, 230) 0%, rgb(149, 210, 251) 45%, rgb(196, 245, 255) 180% );
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.nav{
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+}
+
+.rectangle{
+
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    top: 0px; 
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.left{
+
+    position: absolute;
+    width: 36px;
+    height: 35px;
+    left: 5px;
+    top: 9px;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.btnf{
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+
+.back{
+
+    position: absolute;
+    width: 33px;
+    height: 26px;
+    left: 42px;
+    top: 13px;
+    
+    font-family: 'Itim';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+
+select{
+    background-color: transparent;
+    display: inline;
+    border: none;
+    border-bottom: #000000 solid 1px;
+}
+
+.dep,.arr{
+    display: inline;
+}
+
+.itineraire{
+    width: 100%;
+}
+
+.itineraire tr {
+    width: 100%;
+}
+
+.itineraire{
+   
+    padding-bottom: 5px;
+}
+
+.form1{
+    border-bottom: 1px solid black;
+    padding: 1px;
+}
+
+.btnr{
+    margin: 10px 3px;
+    background-color: rgb(255, 255, 255);
+    border: 1px ridge rgb(203, 246, 246);
+    color: rgb(24, 155, 242);
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all .5s;
+    display: block;
+}
+
+
+
+.btnr:hover{
+    background-color:aliceblue;
+    color:rgb(43, 14, 230);
+    transition: all .5s;
+}
+
+
+.resultat{
+    width: 100%;
+    /* background-color: gainsboro; */
+    
+    height: max-content;
+}
+
+.nbr{
+    font-size: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.resultsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.resultsTable th,
+.resultsTable td {
+    padding: 10px;
+    text-align: left;
+}
+
+.resultsTable th {
+
+    /* background-color: #f0f0f0; */
+    border-bottom: 1px solid #000000;
+
+    font-weight: bold;
+}
+
+.resultsTable td {
+    border-bottom: 1px solid #000000;
+    font-size: 15px;
+}
+
+.resultsTable td:first-child {
+    width: 30%;
+}
+
+.resultsTable td:last-child {
+    width: 15%;
+}
+.resultsTable tr:hover{
+    /* background-color: #c9c8c8; */
+    background-color: rgb(8, 8, 8,.2);
+}
+#order{
+    margin-bottom: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+}
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

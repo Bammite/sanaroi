@@ -1,0 +1,122 @@
+.acteur{
+    min-height:10vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.contenair{
+    background-color: aliceblue;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 3px solid white;
+}
+
+.card-image .im{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 50%;
+    border: 4px solid #265df2;
+}
+
+.card{
+    border-radius: 25px;
+    flex-direction: column;
+
+}
+
+.image-content,.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.description{
+    color: gray;
+    text-align: center;
+}
+
+.image-content{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0px;
+
+}
+
+.bouton{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: rgb(42, 89, 245);
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.bouton:hover{
+    background-color: #130000;
+    color: rgb(201, 208, 231);
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #265df2;;
+    border-radius: 25px 25px 0;
+}
+
+.overlay::before,.overlay::after{
+    content: '';
+    position: absolute;
+    height: 34px;
+    width: 40px;
+    bottom: -40px;
+    background-color: #265df2;
+    padding: 3px;
+    right: 0; 
+    border: 0px solid red;
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
+
+.slide-contenair{
+    height: 600px;
+    width: 100%;
+    padding: 10px;
+}
+.card-warpper{
+    margin: 10px;
+    width: 900px;
+}
+
+.swiper{
+    height: 600px;
+}
+
+
+
+
+
+ 

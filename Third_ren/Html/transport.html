@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </a>
+    <link rel="stylesheet" href="../Css/transpor.css">
+    <link rel="stylesheet" href="../Css/Generale.css">
+    <title>Transport</title>
+</head>
+<body>
+    <nav class="rectangle">
+        <a href="Service.html">
+            <div class="left">
+                <svg width="44" height="43" viewBox="0 0 44 43" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g filter="url(#filter0_d_97_2)">
+                    <rect x="4" width="36" height="35" fill="url(#pattern0_97_2)" shape-rendering="crispEdges"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_97_2" x="0" y="0" width="44" height="43" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_97_2"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_97_2" result="shape"/>
+                    </filter>
+                    <pattern id="pattern0_97_2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_97_2" transform="matrix(0.00972222 0 0 0.01 0.0138889 0)"/>
+                    </pattern>
+                    <image id="image0_97_2" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACA0lEQVR4nO3cu2tUQRhA8SOCFjYWERF8gCQqrgoiEoIK0XRqjKV/pa9GtLcRO0Es1DS+MIkm6wMTIjcsbEREzQw4zOfO+cH0H/dk927unXtBkiRJkiRJkiRJkiRJkiRVswPY7vGv7zDwAPg+XA+B87WHatU5YAXoflmrwIXaw7VmCuj/JsbmelR7wJZMAst/idENv7521R60BWeBj1vE2Ayys/awo+4M8CEhRjc80aug08BSYow+cMwa5ZwCFhJjfAGmjVHO4C/9XUaMi8Yo5yjwNiPGJWOUjfEmMcZXYMYY5RwBXifG+AZcNkY5ExkxVoErxihnHHiVEeOqMco5BMxnxJg1RjkHgZcZMa4Zo5wDwIuMGHPGKBvjeWKMNeB6wVmatz8jxjpwo/kjVtBe4KkxYtgHPEuMMWprBbgL9PgPPxmjvD4BJ2vH2AM8CXAwuiDrfs0Yu4HHAQ5CF2it1dxHZhBiBRkY8yuLn4PcIwBP6vw4qZ8giJZ/9i4Dd4DjBOM/hgF56SQgLy4G5OX3gLxBFZC3cANyk0NAbgMKyI1yAbmVNCA3Wwfk4wgB+cDOCDzS1qs9cAtyHvq8XXvYVqR+UhZrD9qSyYQXB3wGttUetCVTW7xaY3BnThVePtP/ww7BcLdJW9EDbg7PGe+BW8aQJEmSJEmSJEmSJEmSJEniH9sA55WtLsz50PAAAAAASUVORK5CYII="/>
+                    </defs>
+                </svg>
+            </div>
+            <div class="back">back</div>
+        </a>
+    </nav>
+    <div class="space"></div>
+    <section class="sec1">
+        <form action="" method="post" class="form1">
+            <table class="itineraire">
+                <tr class="Titre">
+                    <td class="depT">
+                        Lieu de départ:
+                    </td>
+                    <td class="depS">
+                        Lieu d'arrivée:
+                    </td>
+                </tr>
+                <tr class="selectbox">
+                    <td class="depT">
+                        <select name="dp" id="departure" title="Lieu de départ">
+                            <option value="0">Saint Louis</option>
+                            <option value="1">DK</option>
+                            <option value="2">TH</option>
+                            <option value="3">FT</option>
+                        </select>
+                    </td>
+
+                    <td class="depS">
+                        <select name="dp" id="arrival" title="Lieu d'arrivée">
+                            <option value="0">Saint Louis</option>
+                            <option value="1">DK</option>
+                            <option value="2">TH</option>
+                            <option value="3">FT</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" name="Rechercher" value="Rechercher" id="searchButton" class="btnr">
+        </form>
+        <p class="ordre_t">Trier par :</p>
+        <select name="ordre" id="order" title="Trier">
+            <option value="date">Date</option>
+            <option value="prix">Prix</option>
+            <option value="compagnie">Compagnie</option>
+        </select>
+    </section>
+    <div class="resultat">
+        <div class="nbr" id="resultCount">
+            <p>10 résultats</p>
+        </div>
+        <table class="resultsTable">
+            <thead>
+                <tr>
+                    <th>Compagnie</th>
+                    <th>Date</th>
+                    <th>Catégorie</th>
+                    <th>Prix</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="resultRow">
+                    <td>ETRAB</td>
+                    <td>22/11/2024</td>
+                    <td>Bus</td>
+                    <td>5200</td>
+                </tr>
+                <tr class="resultRow">
+                    <td>Compagnie XYZ</td>
+                    <td>25/11/2024</td>
+                    <td>Train</td>
+                    <td>6700</td>
+                </tr>
+                <tr class="resultRow">
+                    <td>Compagnie XYZ</td>
+                    <td>2/11/2024</td>
+                    <td>voiture</td>
+                    <td>7700</td>
+                </tr>
+                <tr class="resultRow">
+                    <td>ETRAB</td>
+                    <td>12/11/2024</td>
+                    <td>Taxi</td>
+                    <td>3200</td>
+                </tr>
+                <!-- Ajoutez d'autres lignes de résultats ici -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+
+            <span class="close-button">&times;</span>
+            <p>Remboursement possible</p>
+            <form>
+                <input type="text" id="phoneNumber" class="elf" name="phoneNumber" placeholder="Numéro de téléphone" required>
+                <br>
+                <!-- <label for="paymentMethod">Moyen de paiement :</label> -->
+                <select class="elf" id="paymentMethod" name="paymentMethod" required>
+                    <option value="creditCard">Wave</option>
+                    <option value="paypal">OrangeMoney</option>
+                </select>
+                <button class="elf btnf" type="submit">Acheter</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../Javascript/transpor.js"></script>
+    
+    <script>
+
+
+        
+        // Fonction pour afficher le modal
+        function showModal() {
+            document.getElementById('modal').style.display = 'flex';
+        }
+
+        // Fonction pour fermer le modal
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        // Ajout des écouteurs d'événements aux lignes de résultats
+        document.querySelectorAll('.resultRow').forEach(row => {
+            row.addEventListener('click', showModal);
+        });
+
+        // Écouteur d'événement pour le bouton de fermeture
+        document.querySelector('.close-button').addEventListener('click', closeModal);
+
+        // Écouteur d'événement pour fermer le modal en cliquant en dehors
+        window.addEventListener('click', function(event) {
+            if (event.target == document.getElementById('modal')) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

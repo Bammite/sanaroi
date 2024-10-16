@@ -1,0 +1,48 @@
+.logo_pub img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+body{
+    background-color: rgb(225, 240, 251);
+}
+
+.heur_pub{
+    font-size: 9px;
+}
+
+.image_pub{
+
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    display: inline;
+
+}
+
+.image_pub img{
+    margin: 10px;
+    text-align: center;
+    align-items:start;
+    justify-content: start;
+    justify-content: space-around;
+    padding-left: 3px;
+    color: chocolate;
+}
+
+hr{
+    margin: 0 5px;
+}
+
+@media screen and (max-width:570px){
+    .image_pub img{
+        width: 100%;
+        text-align: center;
+        align-items:start;
+        justify-content: start;
+        justify-content: space-around;
+        padding-left: 3px;
+        color: chocolate;
+    }
+}

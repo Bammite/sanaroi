@@ -1,0 +1,116 @@
+body{
+    background: linear-gradient(0deg,rgb(157, 198, 239) 0%, rgb(205, 232, 250) 45%, rgb(231, 250, 253) 180% );
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tgen1,.tgen1 table{
+    
+    display: flex;
+    flex-direction: column;
+
+    border-collapse: collapse;
+    padding: 0;
+    color: rgb(252, 252, 252);
+}
+
+.JST{
+    background-color: rgba(255, 0, 0,.8);
+    
+}
+
+.JST .l1{    
+    font-size: 100%;
+    text-align: end;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.cx{
+   padding: 0;
+}
+
+.c2j{
+    display: flex;
+    width: 40%;
+    height: 60px;
+    align-items: center;
+    text-align: end;
+    justify-content: end;
+}
+
+.c2j tr{
+}
+
+.c2j table{
+    display: flex;
+    justify-content: space-between;
+}
+
+.c1j{
+    width: max-content;
+    text-align: start;
+}
+
+.bleu{
+    
+    
+    color: rgb(78, 125, 236);
+}
+
+.bleu .txp{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bleu .txp h3{
+    background-color: rgba(255, 255, 255);
+    padding: 12px;
+    text-align: justify;
+    border-radius: 10px;
+}
+
+.margin{
+    margin: 10px;
+}
+.vert{
+    background-color: rgba(0, 255, 128, 0.3);
+    color: black;
+}
+
+table .note h1{
+    color: black;
+    height: 11px;
+}
+
+table .note{
+    border-bottom: 2px ridge black;
+    width: min-content;
+    display: flex;
+    margin: 15px;
+   
+}
+
+.imglx,.imgcx,.imgcx img{
+    width: 55%;  
+}
+
+.imgcx img{
+    border: 1px solid black;
+}
+
+
+@media screen and (max-width:500px) {
+    .imglx,.imgcx,.imgcx img{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+

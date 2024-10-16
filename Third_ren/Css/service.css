@@ -1,0 +1,135 @@
+
+
+/* .bar_pub{
+    height: 120px;
+    width: 100%;
+    background-color: rgb(34, 34, 242);
+} */
+
+
+
+.block6{
+    display: none;
+}
+
+ a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 550px) {
+    .service {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .block{ 
+        width: 165px;
+        height: 235px;
+        border-radius: 10px;
+        padding: 0;
+        
+    }
+    .logo_s td {
+        width: 165px;
+        height: 165px;
+        
+        border-radius: 10px;
+        border: solid .1px rgb(8, 41, 206);
+        background-size: 100%;
+    }
+    
+}
+
+
+.block td{
+    display: flex;
+    cursor: pointer;
+
+}
+
+
+
+.block1 .logo_s td{
+    background-image: url(../Image/transport.png);
+    /* background-color: beige; */
+}
+.block2 .logo_s td{
+    background-image: url(../Image/bouquin.svg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+
+}
+.block3 .logo_s td{
+    background-image: url(../Image/livreure.svg);
+    background-repeat: no-repeat;
+    /* background-color: aqua; */
+    
+}
+.block4 .logo_s td{
+    background-image: url(../Image/fastFood.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-color: beige; */
+}
+.block5 .logo_s td{
+    background-image: url(../Image/smallJob2.png);
+    /* background-color: beige; */
+}
+
+.description_s{
+    display: flex;
+    font-weight: bold;
+    font-style:oblique;
+    justify-content: center;
+}
+
+.description_s p{
+    border-bottom: solid 1px black;
+    display: inline;
+}
+
+.description_s td{
+    text-align: center;
+}
+
+@media screen and (min-width: 551px) {
+    .service {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .block{ 
+        width: 265px;
+        height: 335px;
+        border-radius: 10px;
+        padding: 0;
+        
+    }
+    .logo_s td {
+        width: 265px;
+        height: 265px;
+        
+        border-radius: 10px;
+        border: solid .1px rgb(8, 41, 206);
+        background-size: 100%;
+    }
+}
+    
+
+
+.contenair{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
