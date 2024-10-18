@@ -46,3 +46,10 @@ hr{
         color: chocolate;
     }
 }
+
+.logo_instance{
+    display: block;
+    background-color: aliceblue;
+    height: 50px;
+    width: 100%;
+}
